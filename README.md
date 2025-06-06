@@ -15,7 +15,7 @@
 
 - 📫 How to reach me **sandip@sandipcyber.site**
 
-- ⚡ Fun fact **My favorite language? Burp Suite’s HTTP history 😂Dating my PC — chose presence over scrolling. Never looked back.😎**
+- ⚡ Fun fact **My favorite language? Burp Suite’s HTTP history😂   Dating my PC — chose presence over scrolling. Never looked back.😎**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
