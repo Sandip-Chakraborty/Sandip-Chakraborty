@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sandip Chakarborty | Cyber Security Portfolio</title>
+<meta name="description" content="Portfolio of Sandip Chakarborty, cyber security enthusiast.">
+<meta property="og:title" content="Sandip Chakarborty | Cyber Security">
+<meta property="og:image" content="logo.jpg">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#03080a; --panel:rgba(4,20,24,.78); --cyan:#00f5ff; --mint:#2dff9a; --teal:#18b6c9;
+  --dim:#7fd9df; --red:#ff3860;
+  --glow:0 0 6px rgba(0,245,255,.9),0 0 18px rgba(0,245,255,.55),0 0 40px rgba(0,245,255,.3);
+  --box:0 0 0 1px rgba(0,245,255,.45),0 0 18px rgba(0,245,255,.25),inset 0 0 22px rgba(0,245,255,.06);
+  --head:'Orbitron',system-ui,sans-serif; --mono:'Share Tech Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--cyan);font-family:var(--mono);font-size:17px;line-height:1.65;overflow-x:hidden;
+  text-shadow:0 0 6px rgba(0,245,255,.35)}
+/* logo used as full-page glowing backdrop */
+body::before{content:"";position:fixed;inset:0;z-index:-3;background:url(logo.jpg) center/cover no-repeat;opacity:.13;filter:saturate(1.3) blur(1px)}
+body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.85) 100%),
+  repeating-linear-gradient(0deg,rgba(0,245,255,.035) 0 1px,transparent 1px 3px)}
+#rain{position:fixed;inset:0;z-index:-1;opacity:.35;width:100%;height:100%}
+::selection{background:var(--cyan);color:#001316}
+a{color:var(--mint);text-decoration:none}
+a:hover{text-shadow:var(--glow)}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);letter-spacing:.04em;text-shadow:var(--glow)}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;gap:1.2rem;padding:.55rem 1.4rem;
+  background:rgba(2,10,12,.88);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,245,255,.4);box-shadow:0 0 22px rgba(0,245,255,.25)}
+nav .brand{display:flex;align-items:center;gap:.7rem;font-family:var(--head);font-weight:700;color:var(--cyan);text-shadow:var(--glow)}
+nav .brand img{width:38px;height:38px;border-radius:8px;object-fit:cover;box-shadow:var(--box)}
+nav ul{display:flex;gap:1.3rem;list-style:none;margin-left:auto}
+nav ul a{color:var(--cyan);padding:.2rem 0;border-bottom:1px solid transparent}
+nav ul a:hover{border-color:var(--cyan)}
+#menu{display:none;margin-left:auto;background:none;border:1px solid var(--cyan);color:var(--cyan);padding:.3rem .7rem;font:inherit;cursor:pointer}
+
+section{max-width:1080px;margin:0 auto;padding:6.5rem 1.4rem 1rem}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);margin-bottom:1.6rem}
+h2::before{content:"root@scyberx:~# ";color:var(--mint);font-family:var(--mono);font-size:.55em;text-shadow:none;display:block;margin-bottom:.2rem}
+.panel{background:var(--panel);box-shadow:var(--box);border-radius:6px;padding:1.4rem;position:relative}
+
+/* hero */
+#home{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center;padding-top:5rem}
+.hero-logo{position:relative;justify-self:center;width:min(100%,430px);aspect-ratio:1}
+.hero-logo img{width:100%;height:100%;object-fit:cover;border-radius:18px;box-shadow:0 0 0 2px var(--cyan),0 0 30px var(--cyan),0 0 80px rgba(0,245,255,.4);animation:pulse 3.4s ease-in-out infinite}
+.hero-logo::after{content:"";position:absolute;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--mint),transparent);box-shadow:0 0 14px var(--mint);animation:scan 3.6s linear infinite;border-radius:3px}
+@keyframes pulse{50%{box-shadow:0 0 0 2px var(--mint),0 0 44px var(--mint),0 0 110px rgba(45,255,154,.35)}}
+@keyframes scan{0%{top:2%}100%{top:96%}}
+.hello{color:var(--mint)}
+h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.1;margin:.5rem 0;font-weight:900;color:var(--cyan)}
+.glitch{position:relative;display:inline-block}
+.glitch::before,.glitch::after{content:attr(data-t);position:absolute;inset:0;overflow:hidden}
+.glitch::before{color:var(--mint);transform:translate(2px,0);clip-path:inset(0 0 60% 0);animation:gl 2.8s infinite steps(1)}
+.glitch::after{color:var(--red);transform:translate(-2px,0);clip-path:inset(60% 0 0 0);animation:gl 2.1s infinite steps(1) reverse}
+@keyframes gl{0%,88%{opacity:0}90%{opacity:.9;transform:translate(3px,-1px)}94%{opacity:.9;transform:translate(-3px,1px)}100%{opacity:0}}
+.typed{font-size:1.25rem;min-height:2em;color:var(--mint)}
+.typed::after{content:"█";animation:blink 1s steps(1) infinite;margin-left:3px}
+@keyframes blink{50%{opacity:0}}
+.hero p.lead{max-width:56ch;color:var(--dim);margin:1rem 0 1.6rem}
+.btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;font-family:var(--head);font-size:.85rem;letter-spacing:.08em;padding:.8rem 1.4rem;border:1px solid var(--cyan);color:var(--cyan);background:rgba(0,245,255,.06);cursor:pointer;border-radius:3px;transition:.2s}
+.btn:hover{background:var(--cyan);color:#001316;box-shadow:var(--glow);text-shadow:none}
+.btn.alt{border-color:var(--mint);color:var(--mint)}
+.btn.alt:hover{background:var(--mint);box-shadow:0 0 22px var(--mint)}
+
+/* about */
+.about{display:grid;grid-template-columns:240px 1fr;gap:1.8rem;align-items:start}
+.about img{width:100%;border-radius:10px;box-shadow:var(--box);aspect-ratio:1;object-fit:cover}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:1.2rem}
+.stat{text-align:center;padding:.8rem;border:1px dashed rgba(0,245,255,.5);border-radius:4px}
+.stat b{display:block;font-family:var(--head);font-size:1.7rem;color:var(--mint);text-shadow:0 0 12px var(--mint)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem 2rem}
+.skill{margin-bottom:.9rem}
+.skill div{display:flex;justify-content:space-between}
+.bar{height:9px;background:rgba(0,245,255,.12);border-radius:5px;overflow:hidden;margin-top:.3rem;box-shadow:inset 0 0 6px #000}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--cyan),var(--mint));box-shadow:0 0 12px var(--cyan);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.chip{padding:.2rem .8rem;border:1px solid var(--teal);border-radius:20px;font-size:.9rem;transition:.2s;cursor:default}
+.chip:hover{background:rgba(0,245,255,.15);box-shadow:0 0 14px var(--cyan);transform:translateY(-2px)}
+
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.3rem}
+.card{background:var(--panel);border-radius:8px;overflow:hidden;box-shadow:var(--box);transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:0 0 0 1px var(--mint),0 0 30px rgba(45,255,154,.45)}
+.card .thumb{height:130px;background:url(logo.jpg) center 28%/cover;position:relative;filter:hue-rotate(var(--h,0deg)) saturate(1.2)}
+.card .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(2,12,14,.95))}
+.card .body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.card h3{font-size:1.05rem}
+.card p{color:var(--dim);font-size:.95rem;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;font-size:.82rem;color:var(--mint)}
+.tags span::before{content:"#"}
+
+/* timeline */
+.tl{border-left:2px solid var(--cyan);box-shadow:-6px 0 14px -8px var(--cyan);margin-left:.5rem;padding-left:1.6rem}
+.tl .it{position:relative;margin-bottom:1.6rem}
+.tl .it::before{content:"";position:absolute;left:-2.1rem;top:.45rem;width:11px;height:11px;background:var(--mint);border-radius:50%;box-shadow:0 0 12px var(--mint)}
+.tl small{color:var(--mint)}
+.tl h3{font-size:1.02rem;margin:.1rem 0}
+.tl p{color:var(--dim)}
+
+/* terminal */
+.term{background:rgba(0,6,8,.92);box-shadow:var(--box);border-radius:8px;overflow:hidden}
+.term header{display:flex;align-items:center;gap:.5rem;padding:.5rem .9rem;background:rgba(0,245,255,.1);border-bottom:1px solid rgba(0,245,255,.35);font-size:.9rem}
+.term header i{width:11px;height:11px;border-radius:50%;background:var(--red)}
+.term header i:nth-child(2){background:#ffd24a}.term header i:nth-child(3){background:var(--mint)}
+.term header img{width:20px;height:20px;border-radius:4px;margin-left:.4rem}
+#out{height:300px;overflow-y:auto;padding:1rem;white-space:pre-wrap;word-break:break-word;font-size:.95rem}
+#out .cmd{color:var(--mint)}
+.line{display:flex;gap:.6rem;padding:.2rem 1rem 1rem;align-items:center}
+.line label{color:var(--mint);white-space:nowrap}
+#in{flex:1;background:none;border:0;color:var(--cyan);font:inherit;caret-color:var(--mint);outline:0;text-shadow:inherit}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+form{display:flex;flex-direction:column;gap:.8rem}
+input,textarea{background:rgba(0,16,20,.8);border:1px solid rgba(0,245,255,.5);color:var(--cyan);font:inherit;padding:.7rem .9rem;border-radius:4px;transition:.2s}
+input:focus,textarea:focus{outline:0;box-shadow:var(--glow);border-color:var(--cyan)}
+.links{list-style:none;display:flex;flex-direction:column;gap:.7rem;margin-top:.8rem}
+.links a{display:inline-flex;gap:.6rem}
+
+footer{margin-top:5rem;padding:2.5rem 1rem;text-align:center;border-top:1px solid rgba(0,245,255,.4);background:rgba(2,10,12,.85);box-shadow:0 -0 30px rgba(0,245,255,.15)}
+footer img{width:110px;border-radius:14px;box-shadow:var(--box);margin-bottom:.8rem;animation:pulse 3.4s ease-in-out infinite}
+footer p{color:var(--dim);font-size:.9rem}
+
+/* boot overlay */
+#boot{position:fixed;inset:0;z-index:100;background:#000 url(logo.jpg) center/contain no-repeat;display:flex;align-items:flex-end;justify-content:flex-start;padding:2rem;transition:opacity .8s}
+#boot::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.72)}
+#boot pre{position:relative;color:var(--mint);font-family:var(--mono);font-size:1rem;text-shadow:0 0 8px var(--mint)}
+#boot.off{opacity:0;pointer-events:none}
+
+@media(max-width:820px){
+  #home{grid-template-columns:1fr;text-align:center;padding-top:6rem}
+  .hero .btns{justify-content:center}.hero p.lead{margin-inline:auto}
+  .hero-logo{order:-1;width:min(70%,300px)}
+  .about,.contact{grid-template-columns:1fr}.about img{max-width:220px;margin:auto}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(2,10,12,.97);padding:1rem 1.4rem;border-bottom:1px solid var(--cyan)}
+  nav ul.open{display:flex}#menu{display:block}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div id="boot"><pre id="bootlog"></pre></div>
+<canvas id="rain" aria-hidden="true"></canvas>
+
+<nav>
+  <a class="brand" href="#home"><img src="logo.jpg" alt="SCyberX logo"><span>SCyberX</span></a>
+  <button id="menu" aria-label="Toggle menu">MENU</button>
+  <ul id="links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#journey">journey</a></li>
+    <li><a href="#terminal">terminal</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <div class="hello">&gt; access granted. welcome, visitor.</div>
+    <h1><span class="glitch" data-t="Sandip Chakarborty">Sandip Chakarborty</span></h1>
+    <div class="typed" id="typed"></div>
+    <p class="lead">I study how systems break so I can help them hold. Network security, ethical hacking and digital defence, built and tested in my own lab.</p>
+    <div class="btns">
+      <a class="btn" href="#projects">View projects</a>
+      <a class="btn alt" href="#terminal">Open terminal</a>
+      <a class="btn" href="#contact">Contact me</a>
+    </div>
+  </div>
+  <div class="hero-logo"><img src="logo.jpg" alt="SCyberX Cyber Security shield with mask emblem"></div>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <div class="panel about">
+    <img src="logo.jpg" alt="SCyberX emblem">
+    <div>
+      <p>I'm Sandip Chakarborty, a cyber security enthusiast from West Bengal, India. I practise ethical hacking on legal targets, follow CVE disclosures daily, and write down what I learn so others can use it.</p>
+      <p style="margin-top:.8rem">I believe security is a habit, not a product: patch early, log everything, and trust nothing you haven't verified.</p>
+      <div class="stats">
+        <div class="stat"><b data-n="40">0</b>CTF rooms solved</div>
+        <div class="stat"><b data-n="15">0</b>Lab projects</div>
+        <div class="stat"><b data-n="8">0</b>Tools written</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="panel">
+    <div class="skills" id="skillgrid"></div>
+    <div class="chips" id="chips"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid" id="projgrid"></div>
+</section>
+
+<section id="journey">
+  <h2>Journey</h2>
+  <div class="tl panel">
+    <div class="it"><small>Now</small><h3>Penetration testing practice</h3><p>Web app and network assessments in home lab and online platforms.</p></div>
+    <div class="it"><small>Previous</small><h3>Security fundamentals</h3><p>Networking, Linux hardening, cryptography basics and incident response.</p></div>
+    <div class="it"><small>Start</small><h3>First capture the flag</h3><p>Solved a first CTF challenge and never stopped.</p></div>
+  </div>
+</section>
+
+<section id="terminal">
+  <h2>Interactive terminal</h2>
+  <div class="term" id="termbox">
+    <header><i></i><i></i><i></i><img src="logo.jpg" alt=""><span>sandip@scyberx: ~</span></header>
+    <div id="out" aria-live="polite"></div>
+    <div class="line"><label for="in">sandip@scyberx:~$</label><input id="in" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type 'help'"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <div class="panel">
+      <p>Open to internships, CTF teams and security projects. Send a message and your mail app will open.</p>
+      <ul class="links">
+        <li><a href="mailto:your-email@example.com">✉ your-email@example.com</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">⌥ github.com/your-username</a></li>
+        <li><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">in linkedin.com/in/your-username</a></li>
+      </ul>
+    </div>
+    <form class="panel" id="form">
+      <input id="fn" placeholder="Your name" required aria-label="Your name">
+      <input id="fe" type="email" placeholder="Your email" required aria-label="Your email">
+      <textarea id="fm" rows="4" placeholder="Your message" required aria-label="Your message"></textarea>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="logo.jpg" alt="SCyberX Cyber Security logo">
+  <p>© <span id="yr"></span> Sandip Chakarborty. Stay curious, stay secure.</p>
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+$('#yr').textContent=new Date().getFullYear();
+
+/* ---------- boot sequence ---------- */
+(function(){
+  const lines=['[ OK ] loading SCyberX kernel...','[ OK ] mounting encrypted portfolio...','[ OK ] bypassing boredom firewall...','[ OK ] identity: Sandip Chakarborty','> ACCESS GRANTED'];
+  const el=$('#bootlog'),b=$('#boot');let i=0;
+  if(reduce){b.remove();return}
+  (function next(){ if(i<lines.length){el.textContent+=lines[i++]+'\n';setTimeout(next,330)} else setTimeout(()=>{b.classList.add('off');setTimeout(()=>b.remove(),900)},500)})();
+  b.addEventListener('click',()=>b.remove());
+})();
+
+/* ---------- matrix rain ---------- */
+(function(){
+  const c=$('#rain'),x=c.getContext('2d');let w,h,cols,drops;
+  const ch='01ABCDEF{}[]<>/\\$#%&*+=SCYBERX';
+  function size(){w=c.width=innerWidth;h=c.height=innerHeight;cols=Math.floor(w/16);drops=Array(cols).fill(0).map(()=>Math.random()*h/16)}
+  size();addEventListener('resize',size);
+  function draw(){
+    x.fillStyle='rgba(3,8,10,.12)';x.fillRect(0,0,w,h);
+    x.font='15px monospace';
+    for(let i=0;i<cols;i++){
+      x.fillStyle=Math.random()>.97?'#2dff9a':'#00f5ff';
+      x.fillText(ch[Math.floor(Math.random()*ch.length)],i*16,drops[i]*16);
+      if(drops[i]*16>h&&Math.random()>.975)drops[i]=0;drops[i]++;
+    }
+  }
+  if(reduce){draw();return}
+  setInterval(draw,50);
+})();
+
+/* ---------- typing roles ---------- */
+(function(){
+  const roles=['Cyber Security Enthusiast','Ethical Hacker','Network Defender','CTF Player','Bug Hunter in training'];
+  const el=$('#typed');let r=0,i=0,del=false;
+  if(reduce){el.textContent=roles[0];return}
+  (function tick(){
+    const t=roles[r];
+    el.textContent=t.slice(0,i);
+    if(!del&&i===t.length){del=true;return setTimeout(tick,1500)}
+    if(del&&i===0){del=false;r=(r+1)%roles.length}
+    i+=del?-1:1;setTimeout(tick,del?35:80);
+  })();
+})();
+
+/* ---------- data ---------- */
+const skills=[['Network Security',85],['Penetration Testing',80],['Linux & Bash',88],['Python Scripting',78],['Web App Security',75],['Cryptography',65]];
+const tools=['Kali Linux','Nmap','Wireshark','Burp Suite','Metasploit','Hydra','John the Ripper','Splunk','Docker','Git','OWASP Top 10','TryHackMe','Hack The Box'];
+const projects=[
+ {n:'NetScanner',d:'Python port and service scanner with banner grabbing and clean report output.',t:['python','nmap','recon'],h:0},
+ {n:'PhishGuard',d:'Browser checker that flags look-alike domains and suspicious URLs.',t:['javascript','phishing','defence'],h:40},
+ {n:'Home SOC Lab',d:'Virtual lab with log forwarding, alerts and attack simulations for practice.',t:['splunk','docker','blue-team'],h:-30},
+ {n:'CTF Writeups',d:'Step-by-step solutions to web, crypto and forensics challenges.',t:['ctf','forensics','web'],h:70}
+];
+$('#skillgrid').innerHTML=skills.map(s=>`<div class="skill"><div><span>${s[0]}</span><span>${s[1]}%</span></div><div class="bar"><i data-w="${s[1]}"></i></div></div>`).join('');
+$('#chips').innerHTML=tools.map(t=>`<span class="chip">${t}</span>`).join('');
+$('#projgrid').innerHTML=projects.map(p=>`<article class="card"><div class="thumb" style="--h:${p.h}deg"></div><div class="body"><h3>${p.n}</h3><p>${p.d}</p><div class="tags">${p.t.map(x=>`<span>${x}</span>`).join('')}</div><a href="https://github.com/your-username" target="_blank" rel="noopener">View on GitHub</a></div></article>`).join('');
+
+/* ---------- reveal bars + counters ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;io.unobserve(e.target);
+  if(e.target.dataset.w)e.target.style.width=e.target.dataset.w+'%';
+  if(e.target.dataset.n){const end=+e.target.dataset.n;let n=0;const t=setInterval(()=>{n++;e.target.textContent=n+'+';if(n>=end)clearInterval(t)},40)}
+}),{threshold:.4});
+document.querySelectorAll('[data-w],[data-n]').forEach(e=>io.observe(e));
+
+/* ---------- mobile menu ---------- */
+$('#menu').onclick=()=>$('#links').classList.toggle('open');
+$('#links').onclick=()=>$('#links').classList.remove('open');
+
+/* ---------- terminal ---------- */
+(function(){
+  const out=$('#out'),inp=$('#in'),hist=[];let hp=0;
+  const print=(t,c)=>{const d=document.createElement('div');if(c)d.className=c;d.textContent=t;out.appendChild(d);out.scrollTop=out.scrollHeight};
+  const cmds={
+    help:()=>'Commands: about, skills, projects, contact, whoami, scan, matrix, sudo, clear',
+    about:()=>'Sandip Chakarborty - cyber security enthusiast. Breaking things legally, fixing them properly.',
+    whoami:()=>'sandip // ethical hacker // white hat',
+    skills:()=>skills.map(s=>s[0].padEnd(22)+'█'.repeat(Math.round(s[1]/5))+' '+s[1]+'%').join('\n'),
+    projects:()=>projects.map((p,i)=>`[${i+1}] ${p.n} - ${p.d}`).join('\n'),
+    contact:()=>'email: your-email@example.com\ngithub: github.com/your-username',
+    sudo:()=>'Nice try. Permission denied: this incident has been reported to the cat.',
+    matrix:()=>{document.body.animate([{filter:'hue-rotate(0)'},{filter:'hue-rotate(180deg)'},{filter:'hue-rotate(0)'}],{duration:1800});return 'Wake up, Sandip...'},
+    clear:()=>{out.textContent='';return ''},
+    scan:()=>{
+      const ports=[[22,'ssh','closed'],[80,'http','filtered'],[443,'https','open (portfolio)'],[8080,'proxy','closed']];
+      let i=0;print('Starting scan on localhost (this is a harmless simulation)...');
+      const t=setInterval(()=>{const p=ports[i++];print(`${p[0]}/tcp  ${p[2].padEnd(18)}${p[1]}`);if(i>=ports.length){clearInterval(t);print('Scan complete. Nothing to see here.')}},450);
+      return '';
+    }
+  };
+  print("SCyberX terminal v1.0. Type 'help' to begin.");
+  inp.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){
+      const v=inp.value.trim();if(!v)return;hist.push(v);hp=hist.length;
+      print('$ '+v,'cmd');inp.value='';
+      const f=cmds[v.toLowerCase()];
+      const r=f?f():`command not found: ${v}. Try 'help'.`;
+      if(r)print(r);
+    }else if(e.key==='ArrowUp'&&hp>0){inp.value=hist[--hp];e.preventDefault()}
+    else if(e.key==='ArrowDown'){inp.value=hist[++hp]||'';if(hp>hist.length)hp=hist.length}
+  });
+  $('#termbox').addEventListener('click',()=>inp.focus());
+})();
+
+/* ---------- contact form (opens mail client) ---------- */
+$('#form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const s=encodeURIComponent('Portfolio message from '+$('#fn').value);
+  const b=encodeURIComponent($('#fm').value+'\n\nFrom: '+$('#fn').value+' <'+$('#fe').value+'>');
+  location.href=`mailto:your-email@example.com?subject=${s}&body=${b}`;
+});
+</script>
+</body>
+</html>
