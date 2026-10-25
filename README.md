@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Sandip Chakraborty</h1>
 <h3 align="center">A A Dedicated Security Researcher and Ethical Hacker from India</h3>
 
-<img align="right" alt="coding" width="400" src="">
+<img align="center" alt="coding" width="300" height="300" src="https://github.com/Sandip-Chakraborty/Sandip-Chakraborty/blob/a5781e309390f1639dabb73e157a2281bae75c03/image_f02874e4.jpg">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sandip-chakraborty&label=Profile%20views&color=0e75b6&style=flat" alt="sandip-chakraborty" /> </p>
 
