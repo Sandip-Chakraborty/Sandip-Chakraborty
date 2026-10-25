@@ -1,47 +1,36 @@
-# SCyberX Cybersecurity Portfolio
+<h1 align="center">Hi 👋, I'm Sandip Chakraborty</h1>
+<h3 align="center">A Dedicated Security Researcher and Ethical Hacker from India</h3>
 
-Responsive React + Vite portfolio with a neon cyan/green sci-fi interface, animated HUD, clock, terminal-style assistant, skill matrix, projects, certifications and contact section.
+<img align="center" alt="coding" width="300" height="300" src="https://github.com/Sandip-Chakraborty/Sandip-Chakraborty/blob/a5781e309390f1639dabb73e157a2281bae75c03/image_f02874e4.jpg">
 
-## Run locally
-1. Install Node.js (LTS) from https://nodejs.org/
-2. Open this folder in a terminal.
-3. Run `npm install`
-4. Run `npm run dev`
-5. Open the local URL printed by Vite.
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=sandip-chakraborty&label=Profile%20views&color=0e75b6&style=flat" alt="sandip-chakraborty" /> </p>
 
-## Build for production
-Run `npm run build`. Vite creates the deployable site in `dist/`.
+- 🔭 I’m currently working on **a Webapp recon project**
 
-## Deploy to Vercel
-1. Upload this project to a GitHub repository.
-2. In Vercel, choose **Add New → Project** and import that repository.
-3. Framework preset: **Vite**; Build command: `npm run build`; Output directory: `dist`.
-4. Click Deploy.
+- 🌱 I’m currently learning **Webapp Penetration Testing , Digital Forensics , Cybercrime Investigation & Web Dev**
 
-## Personalize before publishing
-- Edit `profile.email` and `profile.linkedin` in `src/main.jsx`.
-- Replace the sample project repository links with the exact GitHub repository URLs for each project.
-- Put your PDF resume at `public/resume.pdf` (create the `public` folder if needed).
-- Verify all certification dates and titles before publishing.
+- 💬 Ask me about **Ethical hacking, Red teaming, Forensic, OSINT,**
 
-System dashboard bars are decorative sample values, not actual machine telemetry. This is a frontend-only portfolio; Node.js/MongoDB are not required unless you later add a backend, database, or real contact-form processing.
+- 📫 How to reach me **sandip@sandipcyber.site**
 
-## Organisation logos (Certifications & Experience)
-Drop each organisation's real logo into `public/logos/` using these file names (png, or edit the name in `src/main.jsx`):
-`ceh.png`, `cpte.png`, `upsifs.png`, `cyber-world-organization.png`.
-Until a file exists, a neon monogram badge is shown automatically.
+- ⚡ Fun fact **My favorite language? Burp Suite’s HTTP history😂   Dating my PC — chose presence over scrolling. Never looked back.😎**
 
-## Terminal commands
-Both terminals (hero "LIVE TERMINAL" and the bottom-right terminal) share one shell, history and current folder. Type `help` for the list. Use ↑/↓ for history, Tab to autocomplete, Ctrl+L to clear.
-- Files: `ls [-la] [dir]` (also `dir`, `list`, `ll`), `cd`, `pwd`, `tree`, `cat <file>`
-- Portfolio: `about`, `skills`, `projects`, `certifications`, `contact`, `home`, `open <section>` — scrolls to the section and blinks its title
-- Links: `github`, `linkedin`, `email`, `resume`
-- System: `whoami`, `id`, `hostname`, `uname -a`, `date`, `uptime`, `neofetch`, `banner`, `env`, `ps`, `history`, `echo`, `which`, `man`, `clear`
-- Network (simulated, nothing is sent): `ping`, `nmap`, `ifconfig`, `netstat`
-- Fun: `sudo`, `rm -rf /`, `hack`, `exit`, `cat .secret`
-The shell lives in `src/terminalEngine.js` — add new commands in its `switch`.
+Sandip Chakarborty (SCyberX)'s Dev Card:- 
 
-## Live attack map (bottom-right terminal)
-Shows a terminal-style dot-matrix world map with animated attack arcs and a scrolling log. By default it uses a **simulated** feed (labelled `SIMULATED FEED`; not real attacks).
-To use real data, copy `.env.example` to `.env` and set `VITE_ATTACK_FEED_URL` to a CORS-enabled JSON endpoint returning events in the format described in `.env.example`; the badge switches to `LIVE FEED`.
-Most public attack maps (Kaspersky, Fortinet, Check Point...) have no open API, so you would need your own small proxy/service that converts a threat-intel source into that format.
+<a href="https://daily.dev/sandipchakraborty10"><img src="https://api.daily.dev/devcards/v2/jeoZ5Vf7jMqSFoGgRCJ6h.png?r=q7x" width="356" alt="Sandip Chakraborty's Dev Card"/></a>
+
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/https://evil.com/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="https://evil.com/" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://evil.com/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://evil.com/" height="30" width="40" /></a>
+<a href="https://instagram.com/sand_ip198" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sand_ip198" height="30" width="40" /></a>
+<a href="https://medium.com/https://evil.com/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="https://evil.com/" height="30" width="40" /></a>
+<a href="https://www.youtube.com/c/sandip chakraborty" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="sandip chakraborty" height="30" width="40" /></a>
+</p>
+
+
+<h3 align="left">Support:</h3>
+<p><a href="https://ko-fi.com/sandip"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="sandip"/></a></p></br></br></br>
+
+[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=Sandip-Chakraborty&layout=compact&langs_count=6&theme=chartreuse-dark)](https://github-stats-extended.vercel.app/api/top-langs?username=Sandip-Chakraborty&layout=compact&langs_count=6&theme=chartreuse-dark)[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Sandip-Chakraborty&rank_icon=github&custom_title=SCyberX&show_icons=true&include_all_commits=true&theme=chartreuse-dark)](https://github-stats-extended.vercel.app/api?username=Sandip-Chakraborty&rank_icon=github&custom_title=SCyberX&show_icons=true&include_all_commits=true&theme=chartreuse-dark)<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sandip-chakraborty&" alt="sandip-chakraborty" /></p>
