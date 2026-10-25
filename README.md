@@ -1,11 +1,9 @@
 <h1 align="center">Hi 👋, I'm Sandip Chakraborty</h1>
-<h3 align="center">A A Dedicated Security Researcher and Ethical Hacker from India</h3>
+<h3 align="center">A Dedicated Security Researcher and Ethical Hacker from India</h3>
 
 <img align="center" alt="coding" width="300" height="300" src="https://github.com/Sandip-Chakraborty/Sandip-Chakraborty/blob/a5781e309390f1639dabb73e157a2281bae75c03/image_f02874e4.jpg">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sandip-chakraborty&label=Profile%20views&color=0e75b6&style=flat" alt="sandip-chakraborty" /> </p>
-
-<p align="left"> <a href="https://twitter.com/https://evil.com/" target="blank"><img src="https://img.shields.io/twitter/follow/https://evil.com/?logo=twitter&style=for-the-badge" alt="https://evil.com/" /></a> </p>
 
 - 🔭 I’m currently working on **a Webapp recon project**
 
