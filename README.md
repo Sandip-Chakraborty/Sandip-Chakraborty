@@ -11,7 +11,7 @@
 
 - 💬 Ask me about **Ethical hacking, Red teaming, Forensic, OSINT,**
 
-- 📫 How to reach me **[Portfolio](https://scyberx.vercel.app/)**
+- 📫 How to reach me **[Portfolio](https://scyberootx.vercel.app/)**
 
 - ⚡ Fun fact **My favorite language? Burp Suite’s HTTP history😂   Dating my PC — chose presence over scrolling. Never looked back.😎**
 
