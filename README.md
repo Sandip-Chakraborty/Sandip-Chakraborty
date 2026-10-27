@@ -1,7 +1,7 @@
-<h1 align="center">Hi 👋, I'm Sandip Chakraborty</h1>
+<h1 align="center">Hi 👋, I'm Sandip Chakraborty ~a.k.a [SCyberootX]</h1>
 <h3 align="center">A Dedicated Security Researcher and Ethical Hacker from India</h3>
 
-<img align="center" alt="coding" width="300" height="300" src="https://github.com/Sandip-Chakraborty/Sandip-Chakraborty/blob/36b0d764a1ac4550317399e932ec29c1fbb4fd1a/logo.jpg">
+<img align="center" alt="coding" width="300" height="300" src="https://github.com/Sandip-Chakraborty/Sandip-Chakraborty/blob/d6c6d3bab6684b4344d1b99894b120e04009e767/logo.jpg">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sandip-chakraborty&label=Profile%20views&color=0e75b6&style=flat" alt="sandip-chakraborty" /> </p>
 
