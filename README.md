@@ -17,7 +17,7 @@
 
 Sandip Chakarborty (SCyberX)'s Dev Card:- 
 
-<a href="https://daily.dev/sandipchakraborty10"><img src="https://api.daily.dev/devcards/v2/jeoZ5Vf7jMqSFoGgRCJ6h.png?r=q7x" width="356" alt="Sandip Chakraborty's Dev Card"/></a>
+<a href="https://daily.dev/scyberootx"><img src="https://api.daily.dev/devcards/v2/jeoZ5Vf7jMqSFoGgRCJ6h.png?type=default&r=5i7" width="356" alt="SCyberootx's Dev Card"/></a>
 
 
 <h3 align="left">Connect with me:</h3>
